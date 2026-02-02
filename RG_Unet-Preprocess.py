@@ -8,7 +8,7 @@ from rembg import remove
 def visualize_u2net_segmentation():
     # --- CONFIGURATION ---
     # Point to your 'Anterior' or 'Lateral' folder
-    dataset_path = r"C:\Users\LENOVO THINKPAD T14\Documents\PROPOSAL TA\files\Rodriguez-Guerrero Dataset\Breast Thermography\Preprocessing\organized_data"
+    dataset_path = r"C:\Users\LENOVO THINKPAD T14\Documents\PROPOSAL TA\files\Rodriguez-Guerrero Dataset\Breast Thermography\Preprocessing\organized_data\anterior"
     
     if not os.path.exists(dataset_path):
         print("Path not found.")
