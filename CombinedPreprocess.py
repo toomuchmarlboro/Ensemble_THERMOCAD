@@ -34,7 +34,7 @@ def unified_physics_pipeline():
     # DATASET B: Rodriguez (Low-Quality JPG)
     # ==========================================
     print("-> Loading Rodriguez (Grayscale)...")
-    rod_path = r"C:\Users\LENOVO THINKPAD T14\Documents\PROPOSAL TA\files\Rodriguez-Guerrero Dataset\Breast Thermography\Preprocessing\data"
+    rod_path = r"C:\Users\User\Documents\Skripsi Faiz_DL\Ensemble_THERMOCAD\DatasetRG_Watershed"
     
     rod_files = []
     for root, _, files in os.walk(rod_path):
