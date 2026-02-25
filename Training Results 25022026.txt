@@ -1,0 +1,172 @@
+PS C:\Users\User\Documents\Skripsi Faiz_DL> & "C:/Users/User/Documents/Skripsi Faiz_DL/Ensemble_THERMOCAD/venv/Scripts/Activate.ps1"
+(venv) PS C:\Users\User\Documents\Skripsi Faiz_DL> & "C:/Users/User/Documents/Skripsi Faiz_DL/Ensemble_THERMOCAD/venv/Scripts/python.exe" "c:/Users/User/Documents/Skripsi Faiz_DL/step2_train_dmr_pipeline.py"
+Error: Run 'step1_extract_dmr.py' first!
+(venv) PS C:\Users\User\Documents\Skripsi Faiz_DL> & "C:/Users/User/Documents/Skripsi Faiz_DL/Ensemble_THERMOCAD/venv/Scripts/python.exe" "c:/Users/User/Documents/Skripsi Faiz_DL/Ensemble_THERMOCAD/CombinedPreprocess.py"
+Traceback (most recent call last):
+  File "c:\Users\User\Documents\Skripsi Faiz_DL\Ensemble_THERMOCAD\CombinedPreprocess.py", line 6, in <module>
+    from datasets import load_dataset
+ModuleNotFoundError: No module named 'datasets'
+(venv) PS C:\Users\User\Documents\Skripsi Faiz_DL> & "C:/Users/User/Documents/Skripsi Faiz_DL/Ensemble_THERMOCAD/venv/Scripts/python.exe" "c:/Users/User/Documents/Skripsi Faiz_DL/Ensemble_THERMOCAD/CombinedPreprocess.py"
+Traceback (most recent call last):
+  File "c:\Users\User\Documents\Skripsi Faiz_DL\Ensemble_THERMOCAD\CombinedPreprocess.py", line 6, in <module>
+    from datasets import load_dataset
+ModuleNotFoundError: No module named 'datasets'
+(venv) PS C:\Users\User\Documents\Skripsi Faiz_DL> pip install datasets
+Collecting datasets
+  Downloading datasets-4.5.0-py3-none-any.whl.metadata (19 kB)
+Requirement already satisfied: filelock in c:\users\user\documents\skripsi faiz_dl\ensemble_thermocad\venv\lib\site-packages (from datasets) (3.20.3)
+Requirement already satisfied: numpy>=1.17 in c:\users\user\documents\skripsi faiz_dl\ensemble_thermocad\venv\lib\site-packages (from datasets) (2.4.2)
+Collecting pyarrow>=21.0.0 (from datasets)
+  Downloading pyarrow-23.0.1-cp314-cp314-win_amd64.whl.metadata (3.1 kB)
+Collecting dill<0.4.1,>=0.3.0 (from datasets)
+  Downloading dill-0.4.0-py3-none-any.whl.metadata (10 kB)
+Requirement already satisfied: pandas in c:\users\user\documents\skripsi faiz_dl\ensemble_thermocad\venv\lib\site-packages (from datasets) (3.0.0)
+Collecting requests>=2.32.2 (from datasets)
+  Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Requirement already satisfied: httpx<1.0.0 in c:\users\user\documents\skripsi faiz_dl\ensemble_thermocad\venv\lib\site-packages (from datasets) (0.28.1)
+Requirement already satisfied: tqdm>=4.66.3 in c:\users\user\documents\skripsi faiz_dl\ensemble_thermocad\venv\lib\site-packages (from datasets) (4.67.3)
+Collecting xxhash (from datasets)
+  Downloading xxhash-3.6.0-cp314-cp314-win_amd64.whl.metadata (13 kB)
+Collecting multiprocess<0.70.19 (from datasets)
+  Downloading multiprocess-0.70.18-py313-none-any.whl.metadata (7.2 kB)
+Collecting fsspec<=2025.10.0,>=2023.1.0 (from fsspec[http]<=2025.10.0,>=2023.1.0->datasets)
+  Downloading fsspec-2025.10.0-py3-none-any.whl.metadata (10 kB)
+Requirement already satisfied: huggingface-hub<2.0,>=0.25.0 in c:\users\user\documents\skripsi faiz_dl\ensemble_thermocad\venv\lib\site-packages (from datasets) (1.4.0)
+Requirement already satisfied: packaging in c:\users\user\documents\skripsi faiz_dl\ensemble_thermocad\venv\lib\site-packages (from datasets) (26.0)
+Requirement already satisfied: pyyaml>=5.1 in c:\users\user\documents\skripsi faiz_dl\ensemble_thermocad\venv\lib\site-packages (from datasets) (6.0.3)
+Collecting aiohttp!=4.0.0a0,!=4.0.0a1 (from fsspec[http]<=2025.10.0,>=2023.1.0->datasets)
+  Downloading aiohttp-3.13.3-cp314-cp314-win_amd64.whl.metadata (8.4 kB)
+Requirement already satisfied: anyio in c:\users\user\documents\skripsi faiz_dl\ensemble_thermocad\venv\lib\site-packages (from httpx<1.0.0->datasets) (4.12.1)
+Requirement already satisfied: certifi in c:\users\user\documents\skripsi faiz_dl\ensemble_thermocad\venv\lib\site-packages (from httpx<1.0.0->datasets) (2026.1.4)
+Requirement already satisfied: httpcore==1.* in c:\users\user\documents\skripsi faiz_dl\ensemble_thermocad\venv\lib\site-packages (from httpx<1.0.0->datasets) (1.0.9)
+Requirement already satisfied: idna in c:\users\user\documents\skripsi faiz_dl\ensemble_thermocad\venv\lib\site-packages (from httpx<1.0.0->datasets) (3.11)
+Requirement already satisfied: h11>=0.16 in c:\users\user\documents\skripsi faiz_dl\ensemble_thermocad\venv\lib\site-packages (from httpcore==1.*->httpx<1.0.0->datasets) (0.16.0)
+Requirement already satisfied: hf-xet<2.0.0,>=1.2.0 in c:\users\user\documents\skripsi faiz_dl\ensemble_thermocad\venv\lib\site-packages (from huggingface-hub<2.0,>=0.25.0->datasets) (1.2.0)
+Requirement already satisfied: shellingham in c:\users\user\documents\skripsi faiz_dl\ensemble_thermocad\venv\lib\site-packages (from huggingface-hub<2.0,>=0.25.0->datasets) (1.5.4)
+Requirement already satisfied: typer-slim in c:\users\user\documents\skripsi faiz_dl\ensemble_thermocad\venv\lib\site-packages (from huggingface-hub<2.0,>=0.25.0->datasets) (0.21.1)
+Requirement already satisfied: typing-extensions>=4.1.0 in c:\users\user\documents\skripsi faiz_dl\ensemble_thermocad\venv\lib\site-packages (from huggingface-hub<2.0,>=0.25.0->datasets) (4.15.0)       
+Collecting aiohappyeyeballs>=2.5.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.10.0,>=2023.1.0->datasets)
+  Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting aiosignal>=1.4.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.10.0,>=2023.1.0->datasets)
+  Downloading aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+Collecting attrs>=17.3.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.10.0,>=2023.1.0->datasets)
+  Downloading attrs-25.4.0-py3-none-any.whl.metadata (10 kB)
+Collecting frozenlist>=1.1.1 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.10.0,>=2023.1.0->datasets)
+  Downloading frozenlist-1.8.0-cp314-cp314-win_amd64.whl.metadata (21 kB)
+Collecting multidict<7.0,>=4.5 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.10.0,>=2023.1.0->datasets)
+  Downloading multidict-6.7.1-cp314-cp314-win_amd64.whl.metadata (5.5 kB)
+Collecting propcache>=0.2.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.10.0,>=2023.1.0->datasets)
+  Downloading propcache-0.4.1-cp314-cp314-win_amd64.whl.metadata (14 kB)
+Collecting yarl<2.0,>=1.17.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.10.0,>=2023.1.0->datasets)
+  Downloading yarl-1.22.0-cp314-cp314-win_amd64.whl.metadata (77 kB)
+Collecting charset_normalizer<4,>=2 (from requests>=2.32.2->datasets)
+  Downloading charset_normalizer-3.4.4-cp314-cp314-win_amd64.whl.metadata (38 kB)
+Collecting urllib3<3,>=1.21.1 (from requests>=2.32.2->datasets)
+  Downloading urllib3-2.6.3-py3-none-any.whl.metadata (6.9 kB)
+Requirement already satisfied: colorama in c:\users\user\documents\skripsi faiz_dl\ensemble_thermocad\venv\lib\site-packages (from tqdm>=4.66.3->datasets) (0.4.6)
+Requirement already satisfied: python-dateutil>=2.8.2 in c:\users\user\documents\skripsi faiz_dl\ensemble_thermocad\venv\lib\site-packages (from pandas->datasets) (2.9.0.post0)
+Requirement already satisfied: tzdata in c:\users\user\documents\skripsi faiz_dl\ensemble_thermocad\venv\lib\site-packages (from pandas->datasets) (2025.3)
+Requirement already satisfied: six>=1.5 in c:\users\user\documents\skripsi faiz_dl\ensemble_thermocad\venv\lib\site-packages (from python-dateutil>=2.8.2->pandas->datasets) (1.17.0)
+Requirement already satisfied: click>=8.0.0 in c:\users\user\documents\skripsi faiz_dl\ensemble_thermocad\venv\lib\site-packages (from typer-slim->huggingface-hub<2.0,>=0.25.0->datasets) (8.3.1)
+Downloading datasets-4.5.0-py3-none-any.whl (515 kB)
+Downloading dill-0.4.0-py3-none-any.whl (119 kB)
+Downloading fsspec-2025.10.0-py3-none-any.whl (200 kB)
+Downloading multiprocess-0.70.18-py313-none-any.whl (151 kB)
+Downloading aiohttp-3.13.3-cp314-cp314-win_amd64.whl (459 kB)
+Downloading multidict-6.7.1-cp314-cp314-win_amd64.whl (45 kB)
+Downloading yarl-1.22.0-cp314-cp314-win_amd64.whl (88 kB)
+Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl (15 kB)
+Downloading aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+Downloading attrs-25.4.0-py3-none-any.whl (67 kB)
+Downloading frozenlist-1.8.0-cp314-cp314-win_amd64.whl (44 kB)
+Downloading propcache-0.4.1-cp314-cp314-win_amd64.whl (41 kB)
+Downloading pyarrow-23.0.1-cp314-cp314-win_amd64.whl (28.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.2/28.2 MB 7.1 MB/s  0:00:03
+Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+Downloading charset_normalizer-3.4.4-cp314-cp314-win_amd64.whl (107 kB)
+Downloading urllib3-2.6.3-py3-none-any.whl (131 kB)
+Downloading xxhash-3.6.0-cp314-cp314-win_amd64.whl (32 kB)
+Installing collected packages: xxhash, urllib3, pyarrow, propcache, multidict, fsspec, frozenlist, dill, charset_normalizer, attrs, aiohappyeyeballs, yarl, requests, multiprocess, aiosignal, aiohttp, datasets
+  Attempting uninstall: fsspec
+    Found existing installation: fsspec 2026.2.0
+    Uninstalling fsspec-2026.2.0:
+      Successfully uninstalled fsspec-2026.2.0
+Successfully installed aiohappyeyeballs-2.6.1 aiohttp-3.13.3 aiosignal-1.4.0 attrs-25.4.0 charset_normalizer-3.4.4 datasets-4.5.0 dill-0.4.0 frozenlist-1.8.0 fsspec-2025.10.0 multidict-6.7.1 multiprocess-0.70.18 propcache-0.4.1 pyarrow-23.0.1 requests-2.32.5 urllib3-2.6.3 xxhash-3.6.0 yarl-1.22.0
+
+[notice] A new release of pip is available: 25.3 -> 26.0.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+(venv) PS C:\Users\User\Documents\Skripsi Faiz_DL> & "C:/Users/User/Documents/Skripsi Faiz_DL/Ensemble_THERMOCAD/venv/Scripts/python.exe" "c:/Users/User/Documents/Skripsi Faiz_DL/Ensemble_THERMOCAD/CombinedPreprocess.py"
+--- 1. Loading Heterogeneous Datasets ---
+-> Loading DMR-IR (Radiometric)...
+README.md: 11.0kB [00:00, 38.3MB/s]
+C:\Users\User\Documents\Skripsi Faiz_DL\Ensemble_THERMOCAD\venv\Lib\site-packages\huggingface_hub\file_download.py:130: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\User\.cache\huggingface\hub\datasets--SemilleroCV--DMR-IR. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+with_mastectomy/train-00000-of-00013.par(…): 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 258M/258M [00:27<00:00, 9.50MB/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+with_mastectomy/train-00001-of-00013.par(…): 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 248M/248M [00:28<00:00, 8.73MB/s]
+with_mastectomy/train-00002-of-00013.par(…): 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 259M/259M [00:25<00:00, 10.2MB/s]
+with_mastectomy/train-00003-of-00013.par(…): 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 273M/273M [00:26<00:00, 10.4MB/s]
+with_mastectomy/train-00004-of-00013.par(…): 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 269M/269M [00:24<00:00, 10.9MB/s]
+with_mastectomy/train-00005-of-00013.par(…): 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 256M/256M [00:24<00:00, 10.3MB/s]
+with_mastectomy/train-00006-of-00013.par(…): 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 248M/248M [00:23<00:00, 10.4MB/s]
+with_mastectomy/train-00007-of-00013.par(…): 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 275M/275M [00:25<00:00, 10.8MB/s]
+with_mastectomy/train-00008-of-00013.par(…): 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 306M/306M [00:28<00:00, 10.6MB/s]
+with_mastectomy/train-00009-of-00013.par(…): 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 302M/302M [00:28<00:00, 10.5MB/s]
+with_mastectomy/train-00010-of-00013.par(…): 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 260M/260M [00:30<00:00, 8.46MB/s]
+with_mastectomy/train-00011-of-00013.par(…): 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 264M/264M [00:25<00:00, 10.2MB/s]
+with_mastectomy/train-00012-of-00013.par(…): 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 302M/302M [00:36<00:00, 8.23MB/s] 
+with_mastectomy/validation-00000-of-0000(…): 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 228M/228M [00:31<00:00, 7.23MB/s] 
+with_mastectomy/validation-00001-of-0000(…): 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 239M/239M [00:32<00:00, 7.26MB/s] 
+with_mastectomy/validation-00002-of-0000(…): 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 240M/240M [00:36<00:00, 6.63MB/s] 
+with_mastectomy/test-00000-of-00003.parq(…): 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 236M/236M [00:21<00:00, 11.0MB/s] 
+with_mastectomy/test-00001-of-00003.parq(…): 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 244M/244M [00:23<00:00, 10.6MB/s] 
+with_mastectomy/test-00002-of-00003.parq(…): 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 263M/263M [00:25<00:00, 10.3MB/s] 
+Generating train split: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4874/4874 [02:01<00:00, 40.00 examples/s] 
+Generating validation split: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 980/980 [00:24<00:00, 40.72 examples/s] 
+Generating test split: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1024/1024 [00:21<00:00, 47.87 examples/s] 
+-> Loading Rodriguez (Grayscale)...
+Error: Rodriguez dataset path not found.
+(venv) PS C:\Users\User\Documents\Skripsi Faiz_DL> & "C:/Users/User/Documents/Skripsi Faiz_DL/Ensemble_THERMOCAD/venv/Scripts/python.exe" "c:/Users/User/Documents/Skripsi Faiz_DL/Ensemble_THERMOCAD/CombinedPreprocess.py"
+--- 1. Loading Heterogeneous Datasets ---
+-> Loading DMR-IR (Radiometric)...
+-> Loading Rodriguez (Grayscale)...
+Pipeline Complete. Displaying unified results...
+(venv) PS C:\Users\User\Documents\Skripsi Faiz_DL> & "C:/Users/User/Documents/Skripsi Faiz_DL/Ensemble_THERMOCAD/venv/Scripts/python.exe" "c:/Users/User/Documents/Skripsi Faiz_DL/Ensemble_THERMOCAD/CombinedPreprocess.py"
+--- 1. Loading Heterogeneous Datasets ---
+-> Loading DMR-IR (Radiometric)...
+-> Loading Rodriguez (Grayscale)...
+Pipeline Complete. Displaying unified results...
+(venv) PS C:\Users\User\Documents\Skripsi Faiz_DL> & "C:/Users/User/Documents/Skripsi Faiz_DL/Ensemble_THERMOCAD/venv/Scripts/python.exe" "c:/Users/User/Documents/Skripsi Faiz_DL/Ensemble_THERMOCAD/NormalAbnormal_Test1.py"
+--- Running on cpu with Batch Size 32 ---
+Dataset Size: 4141 images
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+--- Phase 1: Deep Feature Extraction (Parallel Fusion) ---
+--- Running on cpu with Batch Size 32 ---
+--- Running on cpu with Batch Size 32 ---
+--- Running on cpu with Batch Size 32 ---
+--- Running on cpu with Batch Size 32 ---
+Batch 130/130 processed...
+Extraction Done. Feature Matrix Shape: (4141, 5120)
+
+--- Phase 2: Hybrid Classification (NNMF -> ReliefF -> SVM) ---
+  -> Step 2a: NNMF (Compressing 5000+ features to 50 latent patterns)
+C:\Users\User\Documents\Skripsi Faiz_DL\Ensemble_THERMOCAD\venv\Lib\site-packages\sklearn\decomposition\_nmf.py:1720: ConvergenceWarning: Maximum number of iterations 500 reached. Increase it to improve convergence.
+  warnings.warn(
+  -> Step 2b: ReliefF (Selecting top 20 best patterns)
+  -> Step 2c: SVM Training
+
+--- Phase 3: Evaluation ---
+Global Accuracy: 96.26%
+
+Classification Report:
+              precision    recall  f1-score   support
+
+      Normal       0.96      0.98      0.97       511
+    Abnormal       0.96      0.94      0.95       318
+
+    accuracy                           0.96       829
+   macro avg       0.96      0.96      0.96       829
+weighted avg       0.96      0.96      0.96       829
+
